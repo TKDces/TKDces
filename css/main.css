@@ -1,4 +1,48 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: white;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 70%;
+  background-color: #212529;
+}
+
+.navegacion {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+}
+.navegacion li a {
+  text-decoration: none;
+  color: white;
+}
+
+.contenedor_logo {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  background-color: #212529;
+}
+
+.logo {
+  width: 15%;
+}
+.logo img {
+  width: 100%;
+}
+
 @keyframes move {
   0% {
     transform: translate(0%, 0);
@@ -16,15 +60,49 @@
     transform: translate(0%, 0);
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+span {
+  font-size: 3rem;
+  display: inline-block;
+  animation: move 4s ease-in-out infinite;
+}
+span:nth-child(2) {
+  animation-delay: 0.5s;
+}
+span:nth-child(3) {
+  animation-delay: 1s;
+}
+span:nth-child(4) {
+  animation-delay: 1.5s;
+}
+span:nth-child(5) {
+  animation-delay: 2s;
+}
+span:nth-child(6) {
+  animation-delay: 2.5s;
+}
+span:nth-child(7) {
+  animation-delay: 3s;
+}
+span:nth-child(8) {
+  animation-delay: 3.5s;
+}
+span:nth-child(9) {
+  animation-delay: 4s;
+}
+span:nth-child(10) {
+  animation-delay: 4.5s;
+}
+span:nth-child(11) {
+  animation-delay: 5s;
 }
 
-.navbar {
-  background-color: white;
-  justify-content: center;
+.words {
+  color: black;
+  font-size: 1;
+  font-style: italic;
+  line-height: 1;
+  text-align: center;
+  font-weight: bolder;
 }
 
 body {
@@ -36,98 +114,19 @@ header {
   background-color: #000000;
 }
 
-nav {
-  display: flex;
-  justify-content: flex-end;
-  width: 70%;
-  background-color: #212529;
-}
-
-.contenedor_logo {
-  display: flex;
-  justify-content: flex-start;
-  width: 50%;
-  background-color: #212529;
-}
-
-.logo {
-  width: 15%;
-}
-.logo img {
-  width: 100%;
-}
-
-.navegacion {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 70%;
-}
-.navegacion li a {
-  text-decoration: none;
-  color: white;
-}
-
 .redes_sociales {
   text-decoration: none;
   display: flex;
   justify-content: space-evenly;
 }
 
-.presentación {
-  color: black;
-  text-align: center;
+footer {
+  background-color: black;
+  color: white;
 }
 
-.words {
-  color: black;
-  font-size: 1;
-  font-style: italic;
-  line-height: 1;
-  text-align: center;
-  font-weight: bolder;
-}
-.words span {
-  font-size: 3rem;
-  display: inline-block;
-  animation: move 4s ease-in-out infinite;
-}
-.words span:nth-child(2) {
-  animation-delay: 0.5s;
-}
-.words span:nth-child(3) {
-  animation-delay: 1s;
-}
-.words span:nth-child(4) {
-  animation-delay: 1.5s;
-}
-.words span:nth-child(5) {
-  animation-delay: 2s;
-}
-.words span:nth-child(6) {
-  animation-delay: 2.5s;
-}
-.words span:nth-child(7) {
-  animation-delay: 3s;
-}
-.words span:nth-child(8) {
-  animation-delay: 3.5s;
-}
-.words span:nth-child(9) {
-  animation-delay: 4s;
-}
-.words span:nth-child(10) {
-  animation-delay: 4.5s;
-}
-.words span:nth-child(11) {
-  animation-delay: 5s;
-}
-
-h1 {
-  font-weight: bold t;
-  font-size: 45px;
-  color: black;
+.copyright {
+  color: grey;
   text-align: center;
 }
 
@@ -143,13 +142,47 @@ h1 {
   padding: 20px;
 }
 
-footer {
-  background-color: black;
-  color: white;
+.contenedor_cinturones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.copyright {
-  color: grey;
+.img_cinturones {
+  margin: 20px;
+  width: 360px;
+  min-width: 300px;
+  border: double 7px black;
+}
+
+.ventas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.ventas img {
+  width: 414px;
+  height: 431px;
+  border: double 7px black;
+  margin: 5px;
+  justify-content: center;
+}
+
+@media all and (max-width: 800px) {
+  .taekwondo {
+    width: 100%;
+    text-justify: auto;
+  }
+}
+.presentación {
+  color: black;
+  text-align: center;
+}
+
+h1 {
+  font-weight: bold t;
+  font-size: 45px;
+  color: black;
   text-align: center;
 }
 
@@ -195,12 +228,6 @@ footer {
   margin-right: auto;
 }
 
-.contenedor_cinturones {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .cinturones {
   color: black;
   text-align: justify;
@@ -210,31 +237,4 @@ footer {
   width: 50%;
   min-width: 300px;
   font-size: 18px;
-}
-
-.img_cinturones {
-  margin: 20px;
-  width: 360px;
-  min-width: 300px;
-  border: double 7px black;
-}
-
-.ventas {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.ventas img {
-  width: 414px;
-  height: 431px;
-  border: double 7px black;
-  margin: 5px;
-  justify-content: center;
-}
-
-@media all and (max-width: 800px) {
-  .taekwondo {
-    width: 100%;
-    text-justify: auto;
-  }
 }/*# sourceMappingURL=main.css.map */
