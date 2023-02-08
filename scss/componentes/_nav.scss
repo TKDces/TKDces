@@ -1,0 +1,41 @@
+.navbar {
+    background-color: $background-color_1;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+    background-color: $background-color_4;
+}
+
+.navegacion {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+
+    li {
+        a {
+            text-decoration: none;
+            color: $color_1;
+        }
+    }
+}
+
+.contenedor_logo {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    background-color: $background-color_4;
+}
+
+.logo {
+    width: 15%;
+
+    img {
+        width: 100%;
+    }
+}
