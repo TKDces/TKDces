@@ -262,7 +262,9 @@ footer{
 
 .ventas img{
     width: 414px ;
+    height: 431px;
     border: double 7px black;
     margin: 5px;
     justify-content: center;
+    
 }
