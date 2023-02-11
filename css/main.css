@@ -237,4 +237,19 @@ h1 {
   width: 50%;
   min-width: 300px;
   font-size: 18px;
+}
+
+.btn--ubicacion {
+  color: red;
+  font-size: 1rem;
+}
+
+.btn--whatsapp {
+  color: #00bb2d;
+  font-size: 1rem;
+}
+
+.btn--instagram {
+  color: #b8186d;
+  font-size: 1rem;
 }/*# sourceMappingURL=main.css.map */

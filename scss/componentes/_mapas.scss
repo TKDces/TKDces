@@ -1,0 +1,22 @@
+$redes: (
+    whatsapp: #00bb2d,
+    instagram: #b8186d,
+    ubicacion: red,
+    tam-fuente: 1rem
+
+);
+
+.btn--ubicacion{
+    color: map-get($redes , ubicacion );
+    font-size: map-get($redes , tam-fuente);
+    }
+
+    .btn--whatsapp{
+        color: map-get($redes , whatsapp );
+        font-size: map-get($redes , tam-fuente);
+        }
+
+    .btn--instagram{
+    color: map-get($redes , instagram );
+    font-size: map-get($redes , tam-fuente);
+    }
